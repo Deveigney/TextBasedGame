@@ -1,0 +1,231 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WpfApplication1
+</name>
+</assembly>
+<members>
+<member name="M:WpfApplication1.SkillTab.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.SkillTab">
+	<summary>
+SkillTab
+</summary>
+</member><member name="M:WpfApplication1.StartMenu.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.StartMenu">
+	<summary>
+StartMenu
+</summary>
+</member><member name="M:WpfApplication1.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:WpfApplication1.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:WpfApplication1.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:WpfApplication1.LevelUp.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.LevelUp">
+	<summary>
+LevelUp
+</summary>
+</member><member name="M:WpfApplication1.GameWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.GameWindow">
+	<summary>
+GameWindow
+</summary>
+</member><member name="M:WpfApplication1.OptionsWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.OptionsWindow">
+	<summary>
+OptionsWindow
+</summary>
+</member><member name="M:WpfApplication1.OptionsWindow2.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.OptionsWindow2">
+	<summary>
+OptionsWindow2
+</summary>
+</member><member name="M:WpfApplication1.CharItemWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.CharItemWindow">
+	<summary>
+CharItemWindow
+</summary>
+</member><member name="M:WpfApplication1.ItemsWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.ItemsWindow">
+	<summary>
+ItemsWindow
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._1_1___WelcomeScreen">
+	<summary>
+  Looks up a localized string similar to Welcome to 'Battle of the Texts', a text based game made by Matt and Will.
+
+==========================================================================
+
+Here you will enter the world of Raen, a world ravanged by decades of war.
+
+Do you have what it takes to save Raen.
+
+You can click 'start' to begin
+
+or
+
+Click 'lore' to read up on everything that's happened so far..
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._1_2___Lore">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._2_1___Intro">
+	<summary>
+  Looks up a localized string similar to (NExt button to 2.2)
+The world is foggy around you, yet you dont notice.
+Objects materialize around you, yet nothing seems wrong.
+Your suddenly at your home, in your bed, this doesnt seem odd to you.
+
+Sitting up, you look around, "Today's the day." you realise, this is when you head to the Capital.
+To join the other Chosen, to fight the Shadows.
+You take a step to the door, opening it, light floods around you.
+
+
+.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._5_1___LevelUp">
+	<summary>
+  Looks up a localized string similar to Level #charlevel#/100.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._5_2___HP">
+	<summary>
+  Looks up a localized string similar to Health: #CharHealth#/#CharTotalHealth#.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._5_3___Mana">
+	<summary>
+  Looks up a localized string similar to Mana: #CharMana#/#CharTotalMana#.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._5_4___XP">
+	<summary>
+  Looks up a localized string similar to Exp: #CharExp#/#CharTotalExp#.
+</summary>
+</member><member name="T:WpfApplication1.My.Resources.Resources1">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:WpfApplication1.My.MyWpfExtension.Application">
+	<summary>
+ Returns the application object for the running application
+ </summary>
+</member><member name="P:WpfApplication1.My.MyWpfExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:WpfApplication1.My.MyWpfExtension.User">
+	<summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member><member name="P:WpfApplication1.My.MyWpfExtension.Log">
+	<summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member><member name="P:WpfApplication1.My.MyWpfExtension.Windows">
+	<summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member><member name="T:WpfApplication1.My.MyWpfExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+	<remarks></remarks>
+</member><member name="P:WpfApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources._1_1___WelcomeScreen">
+	<summary>
+  Looks up a localized string similar to Welcome to 'Battle of the Texts', a text based game made by Matt and Will.
+
+==========================================================================
+
+Here you will enter the world of Raen, a world ravanged by decades of war.
+
+Do you have what it takes to save Raen.
+
+You can click 'start' to begin
+
+or
+
+Click 'lore' to read up on everything that's happened so far..
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources._1_2___Lore">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources._2_1___Intro">
+	<summary>
+  Looks up a localized string similar to (NExt button to 2.2)
+The world is foggy around you, yet you dont notice.
+Objects materialize around you, yet nothing seems wrong.
+Your suddenly at your home, in your bed, this doesnt seem odd to you.
+
+Sitting up, you look around, "Today's the day." you realise, this is when you head to the Capital.
+To join the other Chosen, to fight the Shadows.
+You take a step to the door, opening it, light floods around you.
+
+
+.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources._5_1___LevelUp">
+	<summary>
+  Looks up a localized string similar to Level #charlevel#/100.
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources._5_2___HP">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="T:WpfApplication1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
