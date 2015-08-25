@@ -82,7 +82,7 @@ Namespace My.Resources
         End Property
 
         '''<summary>
-        '''  Looks up a localized string similar to .
+        '''  Looks up a localized string similar to wefsdfadgg.
         '''</summary>
         Friend ReadOnly Property _1_2___Lore() As String
             Get
@@ -142,6 +142,24 @@ Namespace My.Resources
         Friend ReadOnly Property _5_4___XP() As String
             Get
                 Return ResourceManager.GetString("_5_4___XP", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to In arena, fight an enemy..
+        '''</summary>
+        Friend ReadOnly Property _7_0___Arena() As String
+            Get
+                Return ResourceManager.GetString("_7_0___Arena", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to .
+        '''</summary>
+        Friend ReadOnly Property _7_1___Combat() As String
+            Get
+                Return ResourceManager.GetString("_7_1___Combat", resourceCulture)
             End Get
         End Property
     End Module

@@ -89,13 +89,13 @@
         LevelLabel3.Content = ReplaceText(fileReader)
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\5.2 - HP.txt")
-        Label2.Content = fileReader
+        Label2.Content = ReplaceText(fileReader)
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\5.3 - Mana.txt")
-        Label3.Content = fileReader
+        Label3.Content = ReplaceText(fileReader)
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\5.4 - XP.txt")
-        LevelLabel4.Content = fileReader
+        LevelLabel4.Content = ReplaceText(fileReader)
         
 
 
@@ -141,11 +141,11 @@
         LoreBtn.Visibility = Windows.Visibility.Hidden
         HiddenBtn.Visibility = Windows.Visibility.Visible
         StartBtn.Visibility = Windows.Visibility.Hidden
-        NextBtn.Visibility = Windows.Visibility.Visible
+        OrkBtn.Visibility = Windows.Visibility.Visible
 
 
 
-        fileReader = My.Computer.FileSystem.ReadAllText("Resources\2.1 - Intro.txt")
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.0 - Arena.txt")
         TextScreen.Text = fileReader
     End Sub
 
@@ -160,6 +160,13 @@
 
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\1.2 - Lore.txt")
+        TextScreen.Text = fileReader
+    End Sub
+
+    Private Sub OrkBtn_Click(sender As Object, e As RoutedEventArgs) Handles OrkBtn.Click
+        Dim fileReader As String
+
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
         TextScreen.Text = fileReader
     End Sub
 End Class

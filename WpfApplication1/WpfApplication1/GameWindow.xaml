@@ -53,6 +53,7 @@
         <Button x:Name="LvBtn" Grid.Column="3" Grid.Row="0" Click="Button_Click_2" Margin="10" Width="130" VerticalAlignment="Center">LevelUp</Button>
         <Button x:Name="CharacterBtn" Grid.Column="4" Grid.Row="0" Margin="10" Width="130" VerticalAlignment="Center">Character</Button>
         <Button x:Name="StartBtn" Grid.Column="1" Grid.Row="3" Margin="10" Width="130" Content="Start"></Button>
+        <Button x:Name="OrkBtn" Grid.Column="1" Grid.Row="3" Margin="10" Width="130"  Visibility="Hidden" Content="Ork"></Button>
         <Button x:Name="NextBtn" Grid.Column="1" Grid.Row="3" Margin="10" Width="130" Visibility="Hidden" Content="Next"></Button>
         <Button x:Name="NextBtn2" Grid.Column="1" Grid.Row="3" Margin="10" Width="130" Visibility="Hidden" Content="Next"></Button>
         <Button x:Name="LoreBtn" Grid.Column="2" Grid.Row="3" Margin="10" Width="130" Visibility="Visible" Content="Lore"></Button>
