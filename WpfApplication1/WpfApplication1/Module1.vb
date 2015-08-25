@@ -17,6 +17,7 @@
         source = source.Replace("#CharTotalExp#", CharTotalExp)
         source = source.Replace("#CharExp#", CharExp)
         source = source.Replace("#CharTotalMana#", CharTotalMana)
+        source = source.Replace("##", CharTotalMana)
 
 
         Return source

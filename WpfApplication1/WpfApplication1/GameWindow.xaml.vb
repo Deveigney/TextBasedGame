@@ -3,6 +3,7 @@
     Class Protaganist
         Public Name As String
         Public HP As Integer
+        Public MaxHP As Integer
         Public DMG As Integer
         Public DEF As Integer
 
@@ -11,6 +12,7 @@
     Public Class Enemy
         Public Name As String
         Public HP As Integer
+        Public MaxHP As Integer
         Public IDP As String
         Public DMG As Integer
 
@@ -52,7 +54,7 @@
         Basilisk.DMG = rnd.Next(12, 66)
 
         Orthros.Name = "Orthros"
-        Orthros.HP = 579
+        Orthros.HP = 580
         Orthros.IDP = "Boots"
         Orthros.DMG = rnd.Next(33, 89)
 
@@ -167,6 +169,7 @@
         Dim fileReader As String
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
+
         TextScreen.Text = fileReader
     End Sub
 End Class
