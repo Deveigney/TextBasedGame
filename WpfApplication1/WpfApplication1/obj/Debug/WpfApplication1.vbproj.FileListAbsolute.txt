@@ -127,3 +127,41 @@ C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplica
 C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Resources.resources
 C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbproj.GenerateResource.Cache
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.xml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\1.1 - WelcomeScreen.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\1.2 - Lore.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\2.1 - Intro.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.2 - HP.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\7.0 - Arena.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\2.3 - Arrival.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\2.2 - Travel.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.1 - LevelUp.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.3 - Mana.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.4 - XP.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\7.1 - Combat.txt
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.xml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbprojResolveAssemblyReference.cache
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\CharItemWindow.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\ItemsWindow.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\LevelUp.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow2.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\StartMenu.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\GameWindow.baml
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\CharItemWindow.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\ItemsWindow.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\LevelUp.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow2.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\StartMenu.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\GameWindow.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\Application.g.vb
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Resources.resources
+C:\Users\Wills\Desktop\GitHub Repositories\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbproj.GenerateResource.Cache

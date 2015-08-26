@@ -41,6 +41,23 @@
 
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
 
+        Dim DMG As New Integer
+        Dim DEF As New Integer
+        Dim OrkHP As New Integer
+
+        If DMG = " " Then
+            DMG = 35
+        End If
+        If DEF = " " Then
+            DEF = 20
+        End If
+
+        User.Name = NameLabel.Text
+        User.HP = 100
+        User.MaxHP = 100
+        User.DMG = DMG
+        User.DEF = DEF
+
         Ork.Name = "Ork"
         Ork.HP = 96
         Ork.MaxHP = 96
@@ -87,7 +104,7 @@
 
         Dim fileReader As String
 
-        fileReader = My.Computer.FileSystem.ReadAllText("Resources\1.1 - WelcomeScreen.txt")
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\1.1 - WelcomeScreen")
         TextScreen.Text = fileReader
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\5.1 - LevelUp.txt")
@@ -166,6 +183,7 @@
     Private Sub OrkBtn_Click(sender As Object, e As RoutedEventArgs) Handles OrkBtn.Click
         Dim fileReader As String
 
+        OrkBtn.Visibility = Windows.Visibility.Hidden
         AttackBtn.Visibility = Windows.Visibility.Visible
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
@@ -212,6 +230,15 @@
 
         FightBtn.Visibility = Windows.Visibility.Hidden
         OrkBtn.Visibility = Windows.Visibility.Visible
+
+    End Sub
+
+    Private Sub AttackBtn_Click(sender As Object, e As RoutedEventArgs) Handles AttackBtn.Click
+
+        Dim rand As New Random
+
+
+        Ork.HP += rand.Next(0, User.DMG)
 
     End Sub
 End Class
