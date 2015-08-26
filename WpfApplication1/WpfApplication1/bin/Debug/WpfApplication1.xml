@@ -61,23 +61,23 @@ LevelUp
 InitializeComponent
 </summary>
 </member>
-<member name="T:WpfApplication1.My.Resources1.Resources">
+<member name="T:WpfApplication1.My.Resources.Resources1">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources.ResourceManager">
+<member name="P:WpfApplication1.My.Resources.Resources1.ResourceManager">
 <summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources.Culture">
+<member name="P:WpfApplication1.My.Resources.Resources1.Culture">
 <summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._1_1___WelcomeScreen">
+<member name="P:WpfApplication1.My.Resources.Resources1._1_1___WelcomeScreen">
 <summary>
   Looks up a localized string similar to Welcome to &apos;Battle of the Texts&apos;, a text based game made by Matt and Will.
 
@@ -94,12 +94,12 @@ or
 Click &apos;lore&apos; to read up on everything that&apos;s happened so far..
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._1_2___Lore">
+<member name="P:WpfApplication1.My.Resources.Resources1._1_2___Lore">
 <summary>
   Looks up a localized string similar to wefsdfadgg.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._2_1___Intro">
+<member name="P:WpfApplication1.My.Resources.Resources1._2_1___Intro">
 <summary>
   Looks up a localized string similar to (NExt button to 2.2)
 The world is foggy around you, yet you dont notice.
@@ -114,13 +114,13 @@ You take a step to the door, opening it, light floods around you.
 .
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._2_2___Travel">
+<member name="P:WpfApplication1.My.Resources.Resources1._2_2___Travel">
 <summary>
   Looks up a localized string similar to You back in and our of lucidity for the next hour, glimpsing briefly the forest, waking for a moment to see parts of the plains beyond.
 You wake up fully, a splitting headache nearly knocks you back into unconciousness, after a few moments, you look around, and notice that the scenery have changed from the foresst you were at, becoming rocky and barren..
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._2_3___Arrival">
+<member name="P:WpfApplication1.My.Resources.Resources1._2_3___Arrival">
 <summary>
   Looks up a localized string similar to (WIP)
 
@@ -135,77 +135,45 @@ The bookie stares at you expectingly...
 What is your name?.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._5_1___LevelUp">
+<member name="P:WpfApplication1.My.Resources.Resources1._5_1___LevelUp">
 <summary>
   Looks up a localized string similar to Level #charlevel#/100.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._5_2___HP">
+<member name="P:WpfApplication1.My.Resources.Resources1._5_2___HP">
 <summary>
   Looks up a localized string similar to Health: #CharHealth#/#CharTotalHealth#.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._5_3___Mana">
+<member name="P:WpfApplication1.My.Resources.Resources1._5_3___Mana">
 <summary>
   Looks up a localized string similar to Mana: #CharMana#/#CharTotalMana#.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._5_4___XP">
+<member name="P:WpfApplication1.My.Resources.Resources1._5_4___XP">
 <summary>
   Looks up a localized string similar to Exp: #CharExp#/#CharTotalExp#.
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._7_0___Arena">
+<member name="P:WpfApplication1.My.Resources.Resources1._7_0___Arena">
 <summary>
   Looks up a localized string similar to In arena, fight an enemy..
 </summary>
 </member>
-<member name="P:WpfApplication1.My.Resources1.Resources._7_1___Combat">
+<member name="P:WpfApplication1.My.Resources.Resources1._7_1___Combat">
 <summary>
   Looks up a localized string similar to 
 You step into the arena, the #Name# standing in the middle of the room.
 
 =======================================================================
 
-	Enemy HP:	#EnemyHP#/#MaxHP#	HP:	#HP/HPMax#
+	Enemy HP:	#EnemyHP# / #MaxHP#	 HP:	#HP# / #HPMax#
 
 =======================================================================
 
 What do you do?
 .
 </summary>
-</member>
-<member name="T:WpfApplication1.My.MyWpfExtension">
- <summary>
- Module used to define the properties that are available in the My Namespace for WPF
- </summary>
- <remarks></remarks>
-</member>
-<member name="P:WpfApplication1.My.MyWpfExtension.Application">
- <summary>
- Returns the application object for the running application
- </summary>
-</member>
-<member name="P:WpfApplication1.My.MyWpfExtension.Computer">
- <summary>
- Returns information about the host computer.
- </summary>
-</member>
-<member name="P:WpfApplication1.My.MyWpfExtension.User">
- <summary>
- Returns information for the current user.  If you wish to run the application with the current 
- Windows user credentials, call My.User.InitializeWithWindowsUser().
- </summary>
-</member>
-<member name="P:WpfApplication1.My.MyWpfExtension.Log">
- <summary>
- Returns the application log. The listeners can be configured by the application's configuration file.
- </summary>
-</member>
-<member name="P:WpfApplication1.My.MyWpfExtension.Windows">
- <summary>
- Returns the collection of Windows defined in the project.
- </summary>
 </member>
 <member name="T:WpfApplication1.My.Resources.Resources">
 <summary>
@@ -269,6 +237,38 @@ You take a step to the door, opening it, light floods around you.
 <summary>
   Looks up a localized string similar to .
 </summary>
+</member>
+<member name="T:WpfApplication1.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:WpfApplication1.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:WpfApplication1.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:WpfApplication1.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:WpfApplication1.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:WpfApplication1.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
 </member>
 <member name="T:WpfApplication1.OptionsWindow">
 <summary>

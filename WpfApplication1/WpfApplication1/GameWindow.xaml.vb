@@ -43,7 +43,6 @@
 
         Dim DMG As New Integer
         Dim DEF As New Integer
-        Dim OrkHP As New Integer
 
         If DMG = " " Then
             DMG = 35
@@ -186,9 +185,11 @@
         OrkBtn.Visibility = Windows.Visibility.Hidden
         AttackBtn.Visibility = Windows.Visibility.Visible
 
-        fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
+        FileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
         fileReader = fileReader.Replace("#EnemyHP#", Ork.HP)
         fileReader = fileReader.Replace("#MaxHP#", Ork.MaxHP)
+        fileReader = fileReader.Replace("#HP#", User.HP)
+        fileReader = fileReader.Replace("#HPMax#", User.MaxHP)
         TextScreen.Text = fileReader
     End Sub
 
@@ -238,7 +239,16 @@
         Dim rand As New Random
 
 
-        Ork.HP += rand.Next(0, User.DMG)
+        Ork.HP -= rand.Next(0, User.DMG)
 
+        User.HP -= rand.Next(0, Ork.DMG)
+
+        If Ork.HP <= 0 Then
+            'Give items and exp to user
+            NextBtn3(Nothing, Nothing) 'activate sub 
+        ElseIf User.HP <= 0 Then
+            'Take away a few items(what the enemy drops)
+            NextBtn3(Nothing, Nothing) 'activate sub 
+        End If
     End Sub
 End Class
