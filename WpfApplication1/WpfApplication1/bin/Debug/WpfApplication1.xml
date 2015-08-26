@@ -6,13 +6,13 @@ WpfApplication1
 </name>
 </assembly>
 <members>
-<member name="M:WpfApplication1.LevelUp.InitializeComponent">
+<member name="M:WpfApplication1.ItemsWindow.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
-</member><member name="T:WpfApplication1.LevelUp">
+</member><member name="T:WpfApplication1.ItemsWindow">
 	<summary>
-LevelUp
+ItemsWindow
 </summary>
 </member><member name="M:WpfApplication1.OptionsWindow.InitializeComponent">
 	<summary>
@@ -38,30 +38,6 @@ InitializeComponent
 	<summary>
 OptionsWindow2
 </summary>
-</member><member name="M:WpfApplication1.ItemsWindow.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:WpfApplication1.ItemsWindow">
-	<summary>
-ItemsWindow
-</summary>
-</member><member name="M:WpfApplication1.CharItemWindow.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:WpfApplication1.CharItemWindow">
-	<summary>
-CharItemWindow
-</summary>
-</member><member name="M:WpfApplication1.GameWindow.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:WpfApplication1.GameWindow">
-	<summary>
-GameWindow
-</summary>
 </member><member name="M:WpfApplication1.Application.InitializeComponent">
 	<summary>
 InitializeComponent
@@ -73,6 +49,30 @@ Application Entry Point.
 </member><member name="T:WpfApplication1.Application">
 	<summary>
 Application
+</summary>
+</member><member name="M:WpfApplication1.GameWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.GameWindow">
+	<summary>
+GameWindow
+</summary>
+</member><member name="M:WpfApplication1.CharItemWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.CharItemWindow">
+	<summary>
+CharItemWindow
+</summary>
+</member><member name="M:WpfApplication1.LevelUp.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:WpfApplication1.LevelUp">
+	<summary>
+LevelUp
 </summary>
 </member><member name="P:WpfApplication1.My.Resources.Resources1.ResourceManager">
 	<summary>

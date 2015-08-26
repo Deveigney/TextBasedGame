@@ -166,6 +166,8 @@
     Private Sub OrkBtn_Click(sender As Object, e As RoutedEventArgs) Handles OrkBtn.Click
         Dim fileReader As String
 
+        AttackBtn.Visibility = Windows.Visibility.Visible
+
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
         fileReader = fileReader.Replace("#EnemyHP#", Ork.HP)
         fileReader = fileReader.Replace("#MaxHP#", Ork.MaxHP)
@@ -175,10 +177,8 @@
     Private Sub NextBtn_Click(sender As Object, e As RoutedEventArgs) Handles NextBtn.Click
         Dim fileReader As String
 
-
         NextBtn2.Visibility = Windows.Visibility.Visible
         NextBtn.Visibility = Windows.Visibility.Hidden
-
 
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\2.2 - Travel.txt")
@@ -188,13 +188,30 @@
     Private Sub NextBtn2_Click(sender As Object, e As RoutedEventArgs) Handles NextBtn2.Click
         Dim fileReader As String
 
-
-        NextBtn2.Visibility = Windows.Visibility.Visible
-        NextBtn.Visibility = Windows.Visibility.Hidden
-
-
+        NextBtn3.Visibility = Windows.Visibility.Visible
+        NextBtn2.Visibility = Windows.Visibility.Hidden
+        NameLabel.Visibility = Windows.Visibility.Visible
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\2.3 - Arrival.txt")
         TextScreen.Text = fileReader
+    End Sub
+    Private Sub NextBtn3_Click(sender As Object, e As RoutedEventArgs) Handles NextBtn3.Click
+        Dim fileReader As String
+
+        FightBtn.Visibility = Windows.Visibility.Visible
+        NextBtn3.Visibility = Windows.Visibility.Hidden
+        NextBtn2.Visibility = Windows.Visibility.Hidden
+        NameLabel.Visibility = Windows.Visibility.Hidden
+
+
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.0 - Arena.txt")
+        TextScreen.Text = fileReader
+    End Sub
+
+    Private Sub FightBtn_Click(sender As Object, e As RoutedEventArgs) Handles FightBtn.Click
+
+        FightBtn.Visibility = Windows.Visibility.Hidden
+        OrkBtn.Visibility = Windows.Visibility.Visible
+
     End Sub
 End Class
