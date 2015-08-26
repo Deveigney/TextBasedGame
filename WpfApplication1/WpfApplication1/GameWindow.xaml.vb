@@ -41,30 +41,33 @@
 
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
 
-
-
         Ork.Name = "Ork"
         Ork.HP = 96
+        Ork.MaxHP = 96
         Ork.IDP = "Leather"
         Ork.DMG = rnd.Next(0, 36)
 
         Basilisk.Name = "Basilisk"
         Basilisk.HP = 360
+        Basilisk.MaxHP = 360
         Basilisk.IDP = "Shield"
         Basilisk.DMG = rnd.Next(12, 66)
 
         Orthros.Name = "Orthros"
         Orthros.HP = 580
+        Orthros.MaxHP = 580
         Orthros.IDP = "Boots"
         Orthros.DMG = rnd.Next(33, 89)
 
         Fenrir.Name = "Fenrir"
         Fenrir.HP = 870
+        Fenrir.MaxHP = 870
         Fenrir.IDP = "HP Boost"
         Fenrir.DMG = rnd.Next(42, 236)
 
         Overlord.Name = "Overlord"
         Overlord.HP = 2340
+        Overlord.MaxHP = 2340
         Overlord.IDP = "Overlords Helmet"
         Overlord.DMG = rnd.Next(259, 677)
 
@@ -98,7 +101,7 @@
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\5.4 - XP.txt")
         LevelLabel4.Content = ReplaceText(fileReader)
-        
+
 
 
 
@@ -120,11 +123,6 @@
 
     End Sub
 
-    Private Sub SkillsTab_Click(sender As Object, e As RoutedEventArgs) Handles SkillsTab.Click
-        Dim Frm As New SkillTab
-        Frm.ShowDialog()
-    End Sub
-
     Private Sub Button_Click_2(sender As Object, e As RoutedEventArgs)
         Dim Frm As New LevelUp
 
@@ -143,11 +141,11 @@
         LoreBtn.Visibility = Windows.Visibility.Hidden
         HiddenBtn.Visibility = Windows.Visibility.Visible
         StartBtn.Visibility = Windows.Visibility.Hidden
-        OrkBtn.Visibility = Windows.Visibility.Visible
+        NextBtn.Visibility = Windows.Visibility.Visible
 
 
 
-        fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.0 - Arena.txt")
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\2.1 - Intro.txt")
         TextScreen.Text = fileReader
     End Sub
 
@@ -169,7 +167,34 @@
         Dim fileReader As String
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
+        fileReader = fileReader.Replace("#EnemyHP#", Ork.HP)
+        fileReader = fileReader.Replace("#MaxHP#", Ork.MaxHP)
+        TextScreen.Text = fileReader
+    End Sub
 
+    Private Sub NextBtn_Click(sender As Object, e As RoutedEventArgs) Handles NextBtn.Click
+        Dim fileReader As String
+
+
+        NextBtn2.Visibility = Windows.Visibility.Visible
+        NextBtn.Visibility = Windows.Visibility.Hidden
+
+
+
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\2.2 - Travel.txt")
+        TextScreen.Text = fileReader
+    End Sub
+
+    Private Sub NextBtn2_Click(sender As Object, e As RoutedEventArgs) Handles NextBtn2.Click
+        Dim fileReader As String
+
+
+        NextBtn2.Visibility = Windows.Visibility.Visible
+        NextBtn.Visibility = Windows.Visibility.Hidden
+
+
+
+        fileReader = My.Computer.FileSystem.ReadAllText("Resources\2.3 - Arrival.txt")
         TextScreen.Text = fileReader
     End Sub
 End Class

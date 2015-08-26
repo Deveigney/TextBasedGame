@@ -53,16 +53,12 @@ H:\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
 H:\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.xml
 H:\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.xml
 H:\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.4 - XP.txt
-H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
-H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.xml
-H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\CharItemWindow.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\ItemsWindow.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\LevelUp.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow2.baml
-H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\SkillTab.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\StartMenu.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\GameWindow.baml
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\CharItemWindow.g.vb
@@ -70,7 +66,6 @@ H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\ItemsWindow.g.vb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\LevelUp.g.vb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow.g.vb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\OptionsWindow2.g.vb
-H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\SkillTab.g.vb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\StartMenu.g.vb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\GameWindow.g.vb
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\Application.g.vb
@@ -78,15 +73,20 @@ H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupComp
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Resources.resources
 H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbproj.GenerateResource.Cache
+H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\1.1 - WelcomeScreen.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\1.2 - Lore.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\2.1 - Intro.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.2 - HP.txt
+H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\7.0 - Arena.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.1 - LevelUp.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.3 - Mana.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\5.4 - XP.txt
+H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\7.1 - Combat.txt
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
 H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.xml
-H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\7.0 - Arena.txt
-H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\7.1 - Combat.txt
+H:\TextGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.xml
+H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\2.3 - Arrival.txt
+H:\TextGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\2.2 - Travel.txt

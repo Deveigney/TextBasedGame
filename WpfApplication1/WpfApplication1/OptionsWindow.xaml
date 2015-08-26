@@ -41,10 +41,8 @@
             </Grid.RowDefinitions>
             <Button x:Name="Back_To_Game" Content="Back To Game" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="44"/>
             <Button x:Name="Main_Menu" Content="Main Menu" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="44"/>
-            <Button x:Name="Bold_Text" Content="Bold Text = " HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="42"/>
-            <Button x:Name="Larger_Font" Content="Larger Font = " HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="42"/>
-            <Button x:Name="Save_Game" Content="Save Game" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="42"/>
-            <Button x:Name="Load_Game" Content="Load Game" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="42" Grid.Column="2"/>
+            <Button x:Name="Save_Game" Content="Save Game" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="42"/>
+            <Button x:Name="Load_Game" Content="Load Game" HorizontalAlignment="Left" Margin="10,11,0,0" Grid.Row="3" VerticalAlignment="Top" Width="330" Grid.ColumnSpan="2" Height="42" Grid.Column="1"/>
 
             <TextBlock Grid.Row="0" FontSize="90" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Old English Text MT" Grid.ColumnSpan="2" Margin="26,10" Width="298" Grid.Column="1" Height="108" Grid.RowSpan="2">Options</TextBlock>
 

@@ -56,29 +56,8 @@ Namespace My.Resources
                 Return resourceCulture
             End Get
             Set(value As Global.System.Globalization.CultureInfo)
-                resourceCulture = Value
+                resourceCulture = value
             End Set
-        End Property
-
-        '''<summary>
-        '''  Looks up a localized string similar to Welcome to &apos;Battle of the Texts&apos;, a text based game made by Matt and Will.
-        '''
-        '''==========================================================================
-        '''
-        '''Here you will enter the world of Raen, a world ravanged by decades of war.
-        '''
-        '''Do you have what it takes to save Raen.
-        '''
-        '''You can click &apos;start&apos; to begin
-        '''
-        '''or
-        '''
-        '''Click &apos;lore&apos; to read up on everything that&apos;s happened so far..
-        '''</summary>
-        Friend ReadOnly Property _1_1___WelcomeScreen() As String
-            Get
-                Return ResourceManager.GetString("_1_1___WelcomeScreen", resourceCulture)
-            End Get
         End Property
 
         '''<summary>
@@ -106,6 +85,35 @@ Namespace My.Resources
         Friend ReadOnly Property _2_1___Intro() As String
             Get
                 Return ResourceManager.GetString("_2_1___Intro", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to You back in and our of lucidity for the next hour, glimpsing briefly the forest, waking for a moment to see parts of the plains beyond.
+        '''You wake up fully, a splitting headache nearly knocks you back into unconciousness, after a few moments, you look around, and notice that the scenery have changed from the foresst you were at, becoming rocky and barren..
+        '''</summary>
+        Friend ReadOnly Property _2_2___Travel() As String
+            Get
+                Return ResourceManager.GetString("_2_2___Travel", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to (WIP)
+        '''
+        '''Entering a downward pass in the mountains, you can notice the shadow getting releived, obvious you&apos;re getting close to your destination. Up ahead, you see a large, circular building, large mobs of humans and other creatures gather outside.
+        '''
+        '''As you get closer
+        '''
+        '''The bookie stares at you expectingly...
+        '''
+        '''=========================================
+        '''
+        '''What is your name?.
+        '''</summary>
+        Friend ReadOnly Property _2_3___Arrival() As String
+            Get
+                Return ResourceManager.GetString("_2_3___Arrival", resourceCulture)
             End Get
         End Property
 
@@ -155,7 +163,17 @@ Namespace My.Resources
         End Property
 
         '''<summary>
-        '''  Looks up a localized string similar to .
+        '''  Looks up a localized string similar to 
+        '''You step into the arena, the #Name# standing in the middle of the room.
+        '''
+        '''=======================================================================
+        '''
+        '''	Enemy HP:	#EnemyHP#/#MaxHP#	HP:	#HP/HPMax#
+        '''
+        '''=======================================================================
+        '''
+        '''What do you do?
+        '''.
         '''</summary>
         Friend ReadOnly Property _7_1___Combat() As String
             Get

@@ -92,10 +92,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SkillTab.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="StartMenu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -121,9 +117,6 @@
     </Compile>
     <Compile Include="OptionsWindow2.xaml.vb">
       <DependentUpon>OptionsWindow2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SkillTab.xaml.vb">
-      <DependentUpon>SkillTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartMenu.xaml.vb">
       <DependentUpon>StartMenu.xaml</DependentUpon>
@@ -227,6 +220,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\7.0 - Arena.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.3 - Arrival.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.2 - Travel.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

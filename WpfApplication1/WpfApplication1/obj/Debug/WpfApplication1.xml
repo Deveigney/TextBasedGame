@@ -74,14 +74,6 @@ Application Entry Point.
 	<summary>
 Application
 </summary>
-</member><member name="M:WpfApplication1.SkillTab.InitializeComponent">
-	<summary>
-InitializeComponent
-</summary>
-</member><member name="T:WpfApplication1.SkillTab">
-	<summary>
-SkillTab
-</summary>
 </member><member name="P:WpfApplication1.My.Resources.Resources1.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
@@ -90,22 +82,6 @@ SkillTab
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:WpfApplication1.My.Resources.Resources1._1_1___WelcomeScreen">
-	<summary>
-  Looks up a localized string similar to Welcome to 'Battle of the Texts', a text based game made by Matt and Will.
-
-==========================================================================
-
-Here you will enter the world of Raen, a world ravanged by decades of war.
-
-Do you have what it takes to save Raen.
-
-You can click 'start' to begin
-
-or
-
-Click 'lore' to read up on everything that's happened so far..
 </summary>
 </member><member name="P:WpfApplication1.My.Resources.Resources1._1_2___Lore">
 	<summary>
@@ -124,6 +100,25 @@ You take a step to the door, opening it, light floods around you.
 
 
 .
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._2_2___Travel">
+	<summary>
+  Looks up a localized string similar to You back in and our of lucidity for the next hour, glimpsing briefly the forest, waking for a moment to see parts of the plains beyond.
+You wake up fully, a splitting headache nearly knocks you back into unconciousness, after a few moments, you look around, and notice that the scenery have changed from the foresst you were at, becoming rocky and barren..
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._2_3___Arrival">
+	<summary>
+  Looks up a localized string similar to (WIP)
+
+Entering a downward pass in the mountains, you can notice the shadow getting releived, obvious you're getting close to your destination. Up ahead, you see a large, circular building, large mobs of humans and other creatures gather outside.
+
+As you get closer
+
+The bookie stares at you expectingly...
+
+=========================================
+
+What is your name?.
 </summary>
 </member><member name="P:WpfApplication1.My.Resources.Resources1._5_1___LevelUp">
 	<summary>
@@ -147,7 +142,17 @@ You take a step to the door, opening it, light floods around you.
 </summary>
 </member><member name="P:WpfApplication1.My.Resources.Resources1._7_1___Combat">
 	<summary>
-  Looks up a localized string similar to .
+  Looks up a localized string similar to 
+You step into the arena, the #Name# standing in the middle of the room.
+
+=======================================================================
+
+	Enemy HP:	#EnemyHP#/#MaxHP#	HP:	#HP/HPMax#
+
+=======================================================================
+
+What do you do?
+.
 </summary>
 </member><member name="T:WpfApplication1.My.Resources.Resources1">
 	<summary>
