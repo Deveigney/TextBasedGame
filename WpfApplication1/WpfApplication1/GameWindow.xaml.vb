@@ -97,6 +97,18 @@
     Private Sub Button_Click_2(sender As Object, e As RoutedEventArgs)
         Dim Frm As New LevelUp
 
+        MessageBox.Show("Leveling up" & vbNewLine & "Health: +" & 10 / User.Lvl & vbNewLine & "Damage: +5" & vbNewLine & "Defense: +5")
+
+        User.Lvl += 1
+        User.Lvl += 10 / User.Lvl
+        User.DMG += 5
+        User.DEF += 5
+
+        User.Exp = 0
+        User.TotalExp += 125 / User.Lvl
+
+        NextBtn3_Click(Nothing, Nothing)
+
         Frm.ShowDialog()
     End Sub
 
@@ -293,4 +305,5 @@
         End If
 
     End Sub
+
 End Class
