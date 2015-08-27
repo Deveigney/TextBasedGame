@@ -1,38 +1,6 @@
 ﻿Public Class GameWindow
 
-    Class Protaganist
-        Public Name As String
-        Public HP As Integer
-        Public MaxHP As Integer
-        Public DMG As Integer
-        Public DEF As Integer
-
-
-    End Class
-    Public Class Enemy
-        Public Name As String
-        Public HP As Integer
-        Public MaxHP As Integer
-        Public IDP As String
-        Public DMG As Integer
-
-
-    End Class
-
-    Public Class Items
-        Public HPBoost As Integer
-        Public Shield As String
-        Public Boots As String
-        Public Leather As String
-    End Class
-
-    Dim User As New Protaganist
-    Dim Ork As New Enemy
-    Dim Basilisk As New Enemy
-    Dim Orthros As New Enemy
-    Dim Fenrir As New Enemy
-    Dim Overlord As New Enemy
-    Dim PickupItems As New Items
+    
 
 
     Dim rnd As New Random
@@ -43,7 +11,7 @@
     Public Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
 
         User.Name = NameLabel.Text
-        User.HP = 22
+        User.HP = 100
         User.MaxHP = 100
         User.DMG = 35
         User.DEF = 20
@@ -76,14 +44,9 @@
         Overlord.Name = "Overlord"
         Overlord.HP = 2340
         Overlord.MaxHP = 2340
-        Overlord.IDP = "Overlords Helmet"
+        Overlord.IDP = "Your Freedom"
         Overlord.DMG = rnd.Next(259, 677)
 
-        'Items
-        PickupItems.HPBoost = 300
-        PickupItems.Shield = 400
-        PickupItems.Boots = 200
-        PickupItems.Leather = 300
 
         '(x= requirment, L = item required count, PD = increased stat)
         ' x = 15 
@@ -140,6 +103,12 @@
     Private Sub CharacterBtn_Click(sender As Object, e As RoutedEventArgs) Handles CharacterBtn.Click
         Dim Frm As New ItemsWindow
 
+
+        Frm.ItemList.Items.Add("Sword(" & PickupItems.Sword & ")")
+        Frm.ItemList.Items.Add("Shield(" & PickupItems.Shield & ")")
+        Frm.ItemList.Items.Add("Boots(" & PickupItems.Boots & ")")
+        Frm.ItemList.Items.Add("Leather(" & PickupItems.Leather & ")")
+
         Frm.ShowDialog()
     End Sub
 
@@ -181,6 +150,8 @@
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
         fileReader = fileReader.Replace("#EnemyHP#", Ork.HP)
         fileReader = fileReader.Replace("#MaxHP#", Ork.MaxHP)
+        fileReader = fileReader.Replace("#HP#", User.HP)
+        fileReader = fileReader.Replace("#HPMax#", User.MaxHP)
         TextScreen.Text = fileReader
     End Sub
 
@@ -215,6 +186,14 @@
         SleepBtn.Visibility = Windows.Visibility.Visible
         Btn.Visibility = Windows.Visibility.Hidden
 
+        If User.Exp >= User.TotalExp Then
+            Dim frm As New LevelUp
+
+            frm.Show()
+
+            LvlBtn.Visibility = Windows.Visibility.Visible
+        End If
+
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.0 - Arena.txt")
         TextScreen.Text = fileReader
     End Sub
@@ -237,18 +216,13 @@
         Dim fileReader As String
 
         If User.HP < User.MaxHP Then
-            User.HP += 24
+            User.HP = User.MaxHP
             fileReader = My.Computer.FileSystem.ReadAllText("Resources\0.1 - Sleep.txt")
             TextScreen.Text = fileReader
         Else
             fileReader = My.Computer.FileSystem.ReadAllText("Resources\0.2 - CantSleep.txt")
             TextScreen.Text = fileReader
         End If
-
-        If User.HP > User.MaxHP Then
-            User.HP = User.MaxHP
-        End If
-
 
         
 
@@ -265,11 +239,58 @@
 
     End Sub
 
+    Sub DefeatedOrk()
+        Dim rand As New Random
+        Dim result As Integer
+        Dim XPresult As New Integer
+
+        result = rand.Next(1, 5)
+        XPresult = rand.Next(1, 50)
+        
+
+        If PickupItems.Leather <= 0 Then
+            PickupItems.Leather = 0
+            MessageBox.Show("EXP: +" & XPresult & vbNewLine & "ITEMS LOST" & vbNewLine & "-Leather(0)")
+            Ork.HP = Ork.MaxHP
+        Else
+            MessageBox.Show("EXP: +" & XPresult & vbNewLine & "ITEMS LOST" & vbNewLine & "-Leather(" & result & ")")
+            Ork.HP = Ork.MaxHP
+            PickupItems.Leather -= result
+        End If
+
+        NextBtn3_Click(Nothing, Nothing)
+    End Sub
+
+    Sub VictoryOrk()
+        Dim rand As New Random
+        Dim result As Integer
+        Dim XPresult As New Integer
+
+        result = rand.Next(1, 5)
+        XPresult = rand.Next(1, 50)
+
+        MessageBox.Show("EXP: +" & XPresult & vbNewLine & vbNewLine & "ITEMS GAINED" & vbNewLine & "+Leather(" & result & ")")
+        Ork.HP = Ork.MaxHP
+        PickupItems.Leather += result
+        NextBtn3_Click(Nothing, Nothing)
+ 
+    End Sub
     Private Sub AttackBtn_Click(sender As Object, e As RoutedEventArgs) Handles AttackBtn.Click
 
         Dim rand As New Random
 
-        Ork.HP -= rand.Next(0, User.DMG)
+        Ork.HP -= rand.Next(0, User.DMG + 1)
+        User.HP -= rand.Next(0, Ork.DMG + 1)
+
+        OrkBtn_Click(Nothing, Nothing)
+
+        If Ork.HP <= 0 Then
+            MessageBox.Show("You Win!")
+            VictoryOrk()
+        ElseIf User.HP <= 0 Then
+            MessageBox.Show("You've been defeated")
+            DefeatedOrk()
+        End If
 
     End Sub
 End Class

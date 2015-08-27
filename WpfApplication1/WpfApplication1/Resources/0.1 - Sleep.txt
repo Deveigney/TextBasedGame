@@ -1,5 +1,5 @@
-You sleep in your cot for a few hours, regaining some of your heath and stamina.
+You sleep in your cot for a few hours, regaining your health.
 
-	+24HP
+	++HEALTH REPLENISHED++
 
 Standing up, you enter the arena...

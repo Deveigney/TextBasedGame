@@ -10,11 +10,9 @@
         <Button x:Name="DropBtn" Content="Drop" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="75" Height="22"/>
         <Button x:Name="UseBtn" Content="Use" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="CloseBtnn" Content="Close" HorizontalAlignment="Left" Margin="90,194,0,0" VerticalAlignment="Top" Width="103"/>
-        <ListBox HorizontalAlignment="Left" Height="179" Margin="93,10,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ListBox_SelectionChanged">
+        <ListBox x:Name="ItemList" HorizontalAlignment="Left" Height="179" Margin="93,10,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ListBox_SelectionChanged">
             <ListBox.Items>
-                <ListBoxItem x:Name="List1" Content="Hp Boost" Visibility="Visible"/>
-                <ListBoxItem x:Name="List2" Content="Shield" Visibility="Visible"/>
-                <ListBoxItem x:Name="List3" Content="Leather" Visibility="Visible"/>
+             
             </ListBox.Items>
         </ListBox>
 

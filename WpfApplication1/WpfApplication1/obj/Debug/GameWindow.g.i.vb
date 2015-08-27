@@ -45,7 +45,7 @@ Partial Public Class GameWindow
     
     #ExternalSource("..\..\GameWindow.xaml",52)
     <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
-    Friend WithEvents LvBtn As System.Windows.Controls.Button
+    Friend WithEvents LvlBtn As System.Windows.Controls.Button
     
     #End ExternalSource
     
@@ -248,10 +248,10 @@ Partial Public Class GameWindow
             Return
         End If
         If (connectionId = 4) Then
-            Me.LvBtn = CType(target,System.Windows.Controls.Button)
+            Me.LvlBtn = CType(target,System.Windows.Controls.Button)
             
             #ExternalSource("..\..\GameWindow.xaml",52)
-            AddHandler Me.LvBtn.Click, New System.Windows.RoutedEventHandler(AddressOf Me.Button_Click_2)
+            AddHandler Me.LvlBtn.Click, New System.Windows.RoutedEventHandler(AddressOf Me.Button_Click_2)
             
             #End ExternalSource
             Return
