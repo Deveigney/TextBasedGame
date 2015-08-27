@@ -83,6 +83,19 @@ LevelUp
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._0_1___Sleep">
+	<summary>
+  Looks up a localized string similar to You sleep in your cot for a few hours, regaining some of your heath and stamina.
+
+	+24HP
+
+Standing up, you enter the arena....
+</summary>
+</member><member name="P:WpfApplication1.My.Resources.Resources1._0_2___CantSleep">
+	<summary>
+  Looks up a localized string similar to 
+You're not tired enough to sleep, maybe you should go fight something..
+</summary>
 </member><member name="P:WpfApplication1.My.Resources.Resources1._1_2___Lore">
 	<summary>
   Looks up a localized string similar to wefsdfadgg.

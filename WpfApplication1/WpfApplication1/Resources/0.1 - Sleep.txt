@@ -1,0 +1,5 @@
+You sleep in your cot for a few hours, regaining some of your heath and stamina.
+
+	+24HP
+
+Standing up, you enter the arena...

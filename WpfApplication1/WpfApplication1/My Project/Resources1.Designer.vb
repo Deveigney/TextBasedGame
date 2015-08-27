@@ -56,8 +56,31 @@ Namespace My.Resources
                 Return resourceCulture
             End Get
             Set(value As Global.System.Globalization.CultureInfo)
-                resourceCulture = value
+                resourceCulture = Value
             End Set
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to You sleep in your cot for a few hours, regaining some of your heath and stamina.
+        '''
+        '''	+24HP
+        '''
+        '''Standing up, you enter the arena....
+        '''</summary>
+        Friend ReadOnly Property _0_1___Sleep() As String
+            Get
+                Return ResourceManager.GetString("_0_1___Sleep", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''You&apos;re not tired enough to sleep, maybe you should go fight something..
+        '''</summary>
+        Friend ReadOnly Property _0_2___CantSleep() As String
+            Get
+                Return ResourceManager.GetString("_0_2___CantSleep", resourceCulture)
+            End Get
         End Property
 
         '''<summary>

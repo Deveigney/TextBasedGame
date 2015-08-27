@@ -36,10 +36,18 @@
 
 
     Dim rnd As New Random
+    Dim timer As Timers.Timer
 
 
 
-    Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Public Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+
+        User.Name = NameLabel.Text
+        User.HP = 22
+        User.MaxHP = 100
+        User.DMG = 35
+        User.DEF = 20
+
 
         Ork.Name = "Ork"
         Ork.HP = 96
@@ -47,23 +55,23 @@
         Ork.IDP = "Leather"
         Ork.DMG = rnd.Next(0, 36)
 
-        Basilisk.Name = "Basilisk"
-        Basilisk.HP = 360
-        Basilisk.MaxHP = 360
-        Basilisk.IDP = "Shield"
-        Basilisk.DMG = rnd.Next(12, 66)
+        'Basilisk.Name = "Basilisk"
+        'Basilisk.HP = 360
+        'Basilisk.MaxHP = 360
+        'Basilisk.IDP = "Shield"
+        'Basilisk.DMG = rnd.Next(12, 66)
 
-        Orthros.Name = "Orthros"
-        Orthros.HP = 580
-        Orthros.MaxHP = 580
-        Orthros.IDP = "Boots"
-        Orthros.DMG = rnd.Next(33, 89)
+        'Orthros.Name = "Orthros"
+        'Orthros.HP = 580
+        'Orthros.MaxHP = 580
+        'Orthros.IDP = "Boots"
+        'Orthros.DMG = rnd.Next(33, 89)
 
-        Fenrir.Name = "Fenrir"
-        Fenrir.HP = 870
-        Fenrir.MaxHP = 870
-        Fenrir.IDP = "HP Boost"
-        Fenrir.DMG = rnd.Next(42, 236)
+        'Fenrir.Name = "Fenrir"
+        'Fenrir.HP = 870
+        'Fenrir.MaxHP = 870
+        'Fenrir.IDP = "HP Boost"
+        'Fenrir.DMG = rnd.Next(42, 236)
 
         Overlord.Name = "Overlord"
         Overlord.HP = 2340
@@ -130,7 +138,7 @@
     End Sub
 
     Private Sub CharacterBtn_Click(sender As Object, e As RoutedEventArgs) Handles CharacterBtn.Click
-        Dim Frm As New CharItemWindow
+        Dim Frm As New ItemsWindow
 
         Frm.ShowDialog()
     End Sub
@@ -166,7 +174,9 @@
     Private Sub OrkBtn_Click(sender As Object, e As RoutedEventArgs) Handles OrkBtn.Click
         Dim fileReader As String
 
+        OrkBtn.Visibility = Windows.Visibility.Hidden
         AttackBtn.Visibility = Windows.Visibility.Visible
+        SleepBtn.Visibility = Windows.Visibility.Hidden
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.1 - Combat.txt")
         fileReader = fileReader.Replace("#EnemyHP#", Ork.HP)
@@ -202,16 +212,64 @@
         NextBtn3.Visibility = Windows.Visibility.Hidden
         NextBtn2.Visibility = Windows.Visibility.Hidden
         NameLabel.Visibility = Windows.Visibility.Hidden
-
+        SleepBtn.Visibility = Windows.Visibility.Visible
+        Btn.Visibility = Windows.Visibility.Hidden
 
         fileReader = My.Computer.FileSystem.ReadAllText("Resources\7.0 - Arena.txt")
         TextScreen.Text = fileReader
+    End Sub
+
+    Sub SleepOver()
+
+        If Dispatcher.CheckAccess = False Then
+            Dispatcher.Invoke(AddressOf SleepOver)
+        Else
+            timer.Stop()
+
+            Dim fileReader As String = My.Computer.FileSystem.ReadAllText("Resources\7.0 - Arena.txt")
+            TextScreen.Text = fileReader
+        End If
+
+
+    End Sub
+
+    Private Sub SleepBtn_Click(sender As Object, e As RoutedEventArgs) Handles SleepBtn.Click
+        Dim fileReader As String
+
+        If User.HP < User.MaxHP Then
+            User.HP += 24
+            fileReader = My.Computer.FileSystem.ReadAllText("Resources\0.1 - Sleep.txt")
+            TextScreen.Text = fileReader
+        Else
+            fileReader = My.Computer.FileSystem.ReadAllText("Resources\0.2 - CantSleep.txt")
+            TextScreen.Text = fileReader
+        End If
+
+        If User.HP > User.MaxHP Then
+            User.HP = User.MaxHP
+        End If
+
+
+        
+
+        timer = New Timers.Timer(2000)
+        AddHandler timer.Elapsed, AddressOf SleepOver
+        timer.Start()
+
     End Sub
 
     Private Sub FightBtn_Click(sender As Object, e As RoutedEventArgs) Handles FightBtn.Click
 
         FightBtn.Visibility = Windows.Visibility.Hidden
         OrkBtn.Visibility = Windows.Visibility.Visible
+
+    End Sub
+
+    Private Sub AttackBtn_Click(sender As Object, e As RoutedEventArgs) Handles AttackBtn.Click
+
+        Dim rand As New Random
+
+        Ork.HP -= rand.Next(0, User.DMG)
 
     End Sub
 End Class

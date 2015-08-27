@@ -127,3 +127,5 @@ C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplica
 C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Resources.resources
 C:\Users\William.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbproj.GenerateResource.Cache
+C:\Users\william.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\0.1 - Sleep.txt
+C:\Users\william.james.lawson\Documents\TextBasedGame\WpfApplication1\WpfApplication1\bin\Debug\Resources\0.2 - CantSleep.txt
