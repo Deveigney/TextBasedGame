@@ -55,12 +55,17 @@ Namespace My.Resources
             Get
                 Return resourceCulture
             End Get
+<<<<<<< HEAD
             Set
+=======
+            Set(value As Global.System.Globalization.CultureInfo)
+>>>>>>> origin/master
                 resourceCulture = Value
             End Set
         End Property
 
         '''<summary>
+<<<<<<< HEAD
         '''  Looks up a localized string similar to Welcome to &apos;Battle of the Texts&apos;, a text based game made by Matt and Will.
         '''
         '''==========================================================================
@@ -78,6 +83,27 @@ Namespace My.Resources
         Friend ReadOnly Property _1_1___WelcomeScreen() As String
             Get
                 Return ResourceManager.GetString("_1_1___WelcomeScreen", resourceCulture)
+=======
+        '''  Looks up a localized string similar to You sleep in your cot for a few hours, regaining some of your heath and stamina.
+        '''
+        '''	+24HP
+        '''
+        '''Standing up, you enter the arena....
+        '''</summary>
+        Friend ReadOnly Property _0_1___Sleep() As String
+            Get
+                Return ResourceManager.GetString("_0_1___Sleep", resourceCulture)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized string similar to 
+        '''You&apos;re not tired enough to sleep, maybe you should go fight something..
+        '''</summary>
+        Friend ReadOnly Property _0_2___CantSleep() As String
+            Get
+                Return ResourceManager.GetString("_0_2___CantSleep", resourceCulture)
+>>>>>>> origin/master
             End Get
         End Property
 

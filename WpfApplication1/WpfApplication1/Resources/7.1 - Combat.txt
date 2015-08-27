@@ -3,7 +3,11 @@ You step into the arena, the #Name# standing in the middle of the room.
 
 =======================================================================
 
+<<<<<<< HEAD
 	Enemy HP:	#EnemyHP# / #MaxHP#	 HP:	#HP# / #HPMax#
+=======
+	Enemy HP:	#EnemyHP#/#MaxHP#	HP:	#HP#/#HPMax#
+>>>>>>> origin/master
 
 =======================================================================
 
